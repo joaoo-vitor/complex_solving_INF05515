@@ -10,6 +10,7 @@ const int MAX_LANGUAGES = 105;
 vector<int> graph[MAX_EMPLOYEES + MAX_LANGUAGES];
 bool visited[MAX_EMPLOYEES + MAX_LANGUAGES];
 
+// Dfs starting from a node
 void dfs(int node) {
     visited[node] = true;
     for (int neighbor : graph[node]) {

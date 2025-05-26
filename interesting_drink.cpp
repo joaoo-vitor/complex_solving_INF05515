@@ -21,7 +21,7 @@ int main() {
     sort(prices_shops.begin(), prices_shops.end());
     for (int day=0; day<days; day++) {
         //logn algorithm
-        int a = 0; int b=prices_shops.size()-1;
+        int a = 0; int b=n-1;
         int result;
         while(a<b){
             if((b-a)==1){
